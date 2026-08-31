@@ -1,5 +1,5 @@
 (function () {
-  const BASE = 'repo_link';
+  const BASE = 'https://github.com/NEPAFreq-org/NepaFREQdb';
 
   function inject(src, cb) {
     const s = document.createElement('script');
