@@ -8,14 +8,14 @@
     s.onerror = () => console.error('[main] failed to load', src);
     document.head.appendChild(s);
   }
-  inject('host.js', function () {
+  inject('https://raw.githubusercontent.com/NEPAFreq-org/NepaFREQdb/refs/heads/main/modules/host.js', function () {
     if (typeof window.__HOST_OK__ === 'undefined' || !window.__HOST_OK__) {
       console.error('[main] blocked by host check');
       return;
     }
-    inject('mend.js', function () {
-      inject('load.js', function () {
-        inject('pure.js', function () {
+    inject('https://raw.githubusercontent.com/NEPAFreq-org/NepaFREQdb/refs/heads/main/modules/mend.js', function () {
+      inject('https://raw.githubusercontent.com/NEPAFreq-org/NepaFREQdb/refs/heads/main/modules/load.js', function () {
+        inject('https://raw.githubusercontent.com/NEPAFreq-org/NepaFREQdb/refs/heads/main/modules/pure.js', function () {
           console.log('[main] database ready', window.DB);
         });
       });
