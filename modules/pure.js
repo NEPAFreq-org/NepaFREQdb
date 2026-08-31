@@ -1,6 +1,6 @@
 (function () {
-  const BASE = 'repo_link';
-  const URL  = BASE + 'data.json';
+  const BASE = 'https://github.com/NEPAFreq-org/NepaFREQdb';
+  const URL  = BASE + 'https://raw.githubusercontent.com/NEPAFreq-org/NepaFREQdb/refs/heads/main/modules/data.json';
   const MAX  = 3;
 
   function tryLoad(n) {
