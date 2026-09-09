@@ -1,7 +1,6 @@
 (function () {
-  const BASE = 'https://github.com/NEPAFreq-org/NepaFREQdb';
-  const URL  = BASE + 'https://raw.githubusercontent.com/NEPAFreq-org/NepaFREQdb/refs/heads/main/modules/data.json';
-  const MAX  = 3;
+  const URL = 'https://raw.githubusercontent.com/NEPAFreq-org/NepaFREQdb/main/modules/data.json';
+  const MAX = 3;
 
   function tryLoad(n) {
     fetch(URL)
