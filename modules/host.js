@@ -1,6 +1,8 @@
 (function () {
   const ALLOWED = [
     'nepafreq.org',
+    'cdpn.io',
+    'codepen.io',
     'neparadio.org'
   ];
 
